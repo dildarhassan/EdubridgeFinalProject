@@ -1,0 +1,23 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Booking ID</th>
+        <th>Contact No</th>
+        <th>Date</th>
+        <th>Doctor ID</th>
+        <th>Booked By</th>
+        <th>Patient Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of bookings">
+        <td>{{ booking.bookingId}}</td>
+        <td>{{ booking.contactNo }}</td>
+        <td>{{ booking.date }}</td>
+        <td>{{ booking.doctorId }}</td>
+        <td>{{ booking.bookedBy}}</td>
+        <td>{{ booking.patientName}}</td>
+       
+      </tr>
+    </tbody>
+  </table>

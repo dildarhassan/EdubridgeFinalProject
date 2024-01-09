@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="card" style="max-width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title text-center mb-4">Booking Form</h5>
+      <form (ngSubmit)="submitForm()" #bookingForm="ngForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Booked By:</label>
+          <input type="text" class="form-control form-control-sm" id="bookedBy" name="bookedBy" required [(ngModel)]="booking.bookedBy">
+        </div>
+        <div class="mb-3">
+          <label for="contactNo" class="form-label">Contact:</label>
+          <input type="tel" class="form-control form-control-sm" id="contactNo" name="contactNo" required [(ngModel)]="booking.contactNo">
+        </div>
+        <div class="mb-3">
+          <label for="patientName" class="form-label">Patient:</label>
+          <input type="text" class="form-control form-control-sm" id="patientName" name="patientName" required [(ngModel)]="booking.patientName">
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Date:</label>
+          <input type="date" class="form-control form-control-sm" id="date" name="date" required [(ngModel)]="booking.date">
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm btn-block" [disabled]="!bookingForm.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

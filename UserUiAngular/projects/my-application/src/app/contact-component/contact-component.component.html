@@ -1,0 +1,107 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Contact Form -->
+        <h2 class="text-center">Contact Us</h2>
+        <hr>
+        <form [formGroup]="postContactUsForm" (ngSubmit)="onSubmit()">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" name="firstName" formControlName="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" name="lastName" formControlName="lastName" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" formControlName="email" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="service">Service</label>
+              <input type="text" class="form-control" name="service" formControlName="service" placeholder="Service">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="mobile">Mobile No</label>
+              <input type="tel" class="form-control" name="mobile" formControlName="mobile" placeholder="Mobile No">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="hearAboutUs">How Did you hear About us</label>
+              <input type="text" class="form-control" name="hearAboutUs" formControlName="hearAboutUs" placeholder="How Did you hear About us">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" name="message" formControlName="message" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit"  class="btn btn-success">Submit</button>
+        </form>
+      </div>
+  
+      <div class="col-md-6">
+        <!-- Hours of Operation Table -->
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>8:00 AM - 8:00 PM</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>8:00 AM - 8:00 PM</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>8:00 AM - 8:00 PM</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>8:00 AM - 8:00 PM</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>8:00 AM - 8:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>8:00 AM - 8:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>8:00 AM - 8:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        <hr>
+        <!-- Contact Information -->
+        <div class="card mb-3 bg-light">
+            <div class="card-body">
+              <h5 class="card-title"><strong><i class="bi bi-telephone"></i> Call Us / WhatsApp</strong></h5>
+              <p class="card-text">+91900008769</p>
+            </div>
+          </div>
+    
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 class="card-title"><strong><i class="bi bi-envelope"></i> Email Us</strong></h5>
+              <p class="card-text">hello123.com</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  

@@ -1,0 +1,32 @@
+<!-- Angular Component Template -->
+<div class="container mt-5">
+  <div class="card doctor-card" *ngFor="let doctor of doctors">
+    <div class="row no-gutters">
+      <!-- Portion 1: Name and Details -->
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Name:</strong> {{ doctor.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            <strong>Specialization:</strong> {{ doctor.specialization }} |
+            <strong>Experience:</strong> {{ doctor.experience }}
+          </h6>
+          <p class="card-text"><strong>Place:</strong> {{ doctor.place }}</p>
+          <p class="card-text"><strong>Languages Known:</strong> {{ doctor.languages }}</p>
+          <p class="card-text"><strong>Qualifications:</strong> {{ doctor.qualifications }}</p>
+        </div>
+      </div>
+
+      <!-- Portion 2: Schedule and Book Now Button -->
+      <div class="col-md-6">
+        <div class="card-body">
+          <p class="card-text"><strong>Schedule:</strong> {{ doctor.schedule }}</p>
+          <p class="card-text"><strong>Time:</strong> {{ doctor.time }}</p>
+
+          <!-- Book Now Button -->
+          <button class="btn btn-primary mt-3" (click)="openBookingForm(doctor.id)">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- doctor-list.component.html -->
